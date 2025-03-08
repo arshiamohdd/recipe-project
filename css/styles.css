@@ -1,0 +1,201 @@
+/* Default Body Styling */
+body {
+    font-family: "Source Code Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(to bottom, #e7d5c8, #d9cac7); /* Soft gradient background */
+    margin: 0;
+    padding: 0;
+    border: 15px solid #a67c52; /* Decorative border around the page */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Food Icons Background */
+body::before {
+    content: "";
+    background: 
+        url('https://cdn-icons-png.flaticon.com/128/1046/1046754.png'), /* Coffee */
+        url('https://cdn-icons-png.flaticon.com/128/1046/1046743.png'), /* Croissant */
+        url('https://cdn-icons-png.flaticon.com/128/1046/1046790.png'), /* Sauce Bottle */
+        url('https://cdn-icons-png.flaticon.com/128/2917/2917769.png'), /* Cupcake */
+        url('https://cdn-icons-png.flaticon.com/128/2917/2917787.png'), /* Chocolate */
+        url('https://cdn-icons-png.flaticon.com/128/1699/1699028.png'), /* Pie */
+        url('https://cdn-icons-png.flaticon.com/128/1046/1046748.png'), /* Bread */
+        url('https://cdn-icons-png.flaticon.com/128/2769/2769605.png'), /* Pizza */
+        url('https://cdn-icons-png.flaticon.com/128/3075/3075977.png'), /* Burger */
+        url('https://cdn-icons-png.flaticon.com/128/1046/1046766.png'), /* Ice Cream */
+        url('https://cdn-icons-png.flaticon.com/128/3081/3081946.png'), /* Donut */
+        url('https://cdn-icons-png.flaticon.com/128/3172/3172784.png'); /* Sushi */
+
+    background-repeat: no-repeat;
+    background-size: 
+        40px, 50px, 60px, 50px, 50px, 50px, 50px, 
+        60px, 55px, 45px, 50px, 40px;
+    
+    background-position: 
+        5% 5%,   /* Top Left */
+        95% 5%,  /* Top Right */
+        50% 90%, /* Bottom Center */
+        5% 50%,  /* Left Middle */
+        95% 80%, /* Right Bottom */
+        20% 85%, /* Left Bottom */
+        80% 10%, /* Right Top */
+        30% 20%, /* Top Mid Left */
+        70% 25%, /* Top Mid Right */
+        15% 70%, /* Bottom Left */
+        85% 65%, /* Bottom Right */
+        50% 50%; /* Center */
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.15;
+    z-index: -1; /* Keeps icons in the background */
+}
+
+/* Styling for Homepage */
+.index-page {
+    font-family: "Source Code Pro", serif;
+    font-optical-sizing: auto;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Centers content vertically */
+}
+
+/* Default h1 Styling */
+h1 {
+    font-family: "Yatra One", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite; /* Floating animation */
+}
+
+/* Floating Animation for Title */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Recipe List - Remove Bullet Points and Improve Layout */
+.unordered-list {
+    list-style: none; /* Removes the dots */
+    padding: 0;
+    text-align: center; /* Centers the list */
+}
+
+/*  Spacing Between List Items */
+.unordered-list li {
+    margin: 20px 0; /* Adds space between links */
+}
+
+/* Recipe Links */
+.unordered-list a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #6a0dad;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Glowing Effect on Hover */
+.unordered-list a:hover {
+    color: #ff4500;
+    text-shadow: 0px 0px 15px rgba(255, 69, 0, 0.8);
+    transform: scale(1.1);
+}
+
+/* Recipe Page Layout */
+.recipe-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10%; /* Adds even spacing around */
+    max-width: 900px;
+    margin: 0 auto; /* Centers the content */
+}
+
+/* Recipe Title Styling */
+.recipe-title {
+    font-family: "Yatra One", serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Centering Recipe Images */
+.recipe-img {
+    display: block;
+    max-width: 70%; /* Ensures responsiveness */
+    height: auto;
+    margin: 30px auto; /* Centers the image and adds spacing */
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Recipe Text & Content */
+.recipe-text {
+    max-width: 800px; /* Limits text width for better readability */
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Ingredients & Steps Section */
+.recipe-container {
+    display: flex;
+    justify-content: space-between; /* Ensures side-by-side alignment */
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* Ingredients Section */
+.ingredients-section {
+    width: 45%;
+    text-align: left;
+}
+
+/* Steps Section */
+.recipe-section {
+    width: 50%;
+    text-align: left;
+}
+
+/* Lists */
+.recipe-section ul, 
+.recipe-section ol {
+    padding-left: 20px;
+}
+
+/* Back to Home Link */
+.home-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #6a0dad;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.home-link:hover {
+    color: #ff4500;
+}
