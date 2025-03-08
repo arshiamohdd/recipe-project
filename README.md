@@ -13,15 +13,20 @@ I handpicked **three special recipes** that my mom loves the most:
 -  **Shakshuka** – A hearty egg and tomato dish, perfect for breakfast or brunch.  
 
 ##  Features
-    **Personal Collection** – Recipes with a story behind them  
-    **Responsive & Aesthetic Design** – Soft color gradients & food icons  
-    **Simple Navigation** – Easy-to-browse homepage with links to each recipe  
-    **Hover Effects** – Smooth visual effects on recipe links 
+    Personal Collection – Recipes with a story behind them  
+    Responsive & Aesthetic Design – Soft color gradients & food icons  
+    Simple Navigation – Easy-to-browse homepage with links to each recipe  
+    Hover Effects – Smooth visual effects on recipe links 
 
 ##  How to Use
 1. Clone the repository:
 
-git clone git@github.com:your-username/recipe-project.git
+If using SSH:
+
+git clone git@github.com:arshiamohdd/recipe-project.git
+
+If using HTTPS:
+https://github.com/arshiamohdd/recipe-project.git
 
 2. Navigate to the folder:
 
